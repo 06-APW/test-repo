@@ -3,7 +3,6 @@
   <groupId>com.jdc.apw</groupId>
   <artifactId>05-Exception-Project</artifactId>
   <version>1.0</version>
-  
   <build>
   	<plugins>
   		<plugin>
