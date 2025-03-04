@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import com.jdc.apw.*;
 
-public class Testing {
+public class ATesting {
 	Handler handle = new Handler();
 
 	 //@Test

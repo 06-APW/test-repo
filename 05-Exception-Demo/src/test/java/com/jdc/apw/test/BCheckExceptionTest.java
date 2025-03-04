@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import com.jdc.apw.check.CheckExceptionData;
 
-public class CheckExceptionTest {
+public class BCheckExceptionTest {
 	CheckExceptionData data = new CheckExceptionData();
 	@Test
 	void fileTest() {
