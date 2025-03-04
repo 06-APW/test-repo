@@ -2,7 +2,7 @@ package com.jdc.apw.test;
 
 import org.junit.jupiter.api.Test;
 
-import com.jdc.apw.Handler;
+import com.jdc.apw.*;
 
 public class Testing {
 	Handler handle = new Handler();
