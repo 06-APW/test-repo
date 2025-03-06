@@ -9,19 +9,19 @@ public class TryCatchData {
 	public String useCheckedWithTryFinallyCatch() {
 		String str = null;
 		int i = 0;
-		
+
 		// Try with resource and using try finally catch
-		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))){
+		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
 			System.out.println("Type number : ");
-			str =  br.readLine();
-			 i = Integer.parseInt(str);
-			 br.close(); 
-			
-		} catch (IOException  | NumberFormatException e) {
+			str = br.readLine();
+			i = Integer.parseInt(str);
+			br.close();
+
+		} catch (IOException | NumberFormatException e) {
 			str = "Exception";
-			
-		} finally {				// Finally always work whether the code work or give error
-			str = str + " with number of : " + i;
+
+		} finally { // Finally always work whether the code work or give error
+			str = "Final result " + " with number of : " + i;
 		}
 		return str;
 	}
@@ -39,7 +39,7 @@ public class TryCatchData {
 
 	public String useUncheckedWithTryCatch(Integer num) {
 		try {
-			int i = num / 0;
+			int i = num / 2;
 
 			Object b = num;
 			return (String) b;
@@ -47,11 +47,10 @@ public class TryCatchData {
 		} catch (ClassCastException e) {
 			return "ClassCastException";
 
-		} /*
-			 * catch (ArithmeticException e) { return "ArithmeticException";
-			 * 
-			 * }
-			 */ catch (RuntimeException e) {
+		} catch (ArithmeticException e) {
+			return "ArithmeticException";
+			
+		} catch (RuntimeException e) {
 			return "RuntimeException";
 		}
 	}

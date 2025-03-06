@@ -17,7 +17,7 @@ public class Handler {
 			System.out.println(person.getName());
 
 		} catch (NullPointerException e) {
-			System.out.println("This is NullPointerException because there is no person object");
+			System.out.println("This is NullPointerException because there is nothing in person object");
 		}
 
 	}

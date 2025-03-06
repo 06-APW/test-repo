@@ -5,7 +5,6 @@ public class CustomExceptionData {
 	public String changeChecktoUncheck(String message) {
 		try {
 			String check = getMyCheckException(message);
-			System.out.println(check);
 		} catch (MyCheckException e) {
 			//System.err.println(e.getMessage());
 			throw new MyUncheckException(e.getMessage());
